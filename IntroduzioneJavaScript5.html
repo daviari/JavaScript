@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio Immagine</title>
+    <style>
+        .mia-immagine {
+            width: 300px;
+            height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <img id="immagine" src="https://umanet.net/media/profiles/IMG_20240916_083949.jpg" alt="Immagine">
+    <button onclick="cambiaImmagine()">Cambia Immagine</button>
+    <script>
+        function cambiaImmagine() {
+            var immagine = document.getElementById("immagine");
+            console.log(immagine.src)
+            if (immagine.src.includes("https://umanet.net/media/profiles/IMG_20240916_083949.jpg")) {
+            immagine.src = "https://umanet.net/media/profiles/IMG_20240929_215559.jpg";
+            } else {
+            immagine.src = "https://umanet.net/media/profiles/1000027239.jpg";
+            }
+        }
+    </script>
+</body>
+</html>
